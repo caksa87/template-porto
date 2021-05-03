@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" href="assets/img/logo.png">
+	<title>Joely Soemary</title>
+
+	<script src="https://use.fontawesome.com/8002dab23f.js"></script>
+
+	<link href="core/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/index.css">
+
+	<style>
+		.section.hero .contact-wrapper { margin: 0 -.75rem; }
+		.section.hero .contact-wrapper .menu-item {
+			transition: .3s;
+			margin: 0 .75rem;
+			text-decoration: none;
+		}
+		.section.hero .contact-wrapper .menu-item:not(.btn):hover { transform: scale(1.5); }
+		@media(min-width: 768px) {
+			.section.hero .bg-img {
+				border-top-left-radius: 3rem;
+				border-bottom-left-radius: 3rem;
+			}
+		}
+
+		.section.skill .card {
+			transition: .3s;
+			background-color: var(--color-prime-super-dark);
+			border-color: var(--color-prime);
+		}
+		.section.skill .card .icon { color: var(--color-prime); }
+		.section.skill .card:hover {
+			font-weight: bold;
+			color: var(--color-white);
+			background-color: var(--color-prime);
+			filter: drop-shadow(0 3rem 3rem rgba(255,0,222,.3));
+			border: 0;
+			transform: scale(1.1);
+			z-index: 1;
+		}
+		.section.skill .card:hover .icon { color: var(--color-white); }
+
+		.section.client {
+			background-image:
+				url('assets/img/blob-1.svg'),
+				url('assets/img/blob-2.svg');
+			background-size:
+				40vmax,
+				50vmax;
+			background-position:
+				left bottom,
+				46vw bottom;
+		}
+		.section.client .card {
+			height: 125px;
+			transition: .3s;
+			background-color: var(--color-prime-super-dark);
+			border-color: var(--color-prime);
+		}
+		.section.client .card:hover {
+			transform: scale(1.1);
+			filter: drop-shadow(0 3rem 3rem rgba(255,0,222,.4));
+		}
+
+		.section.project {
+			background-image:
+				url('assets/img/blob-1.svg'),
+				url('assets/img/blob-2.svg');
+			background-size:
+				40vmax,
+				70vmax;
+			background-position:
+				left top,
+				46vmax top;
+		}
+		.section.project .carousel .carousel-inner .card .img { height: 500px !important; }
+
+		.section.testimonial .carousel .carousel-inner,
+		.section.project .carousel .carousel-inner { filter: drop-shadow(0 3rem 3rem rgba(255,0,222,.4)); }
+		.section.testimonial .avatar {
+			width: 50px;
+			height: 50px;
+		}
+
+		.side .left {
+			height: calc(100vh - (59px * 2));
+			flex-direction: column;
+		}
+		.side .left .menu-wrapper { flex-direction: column; }
+		.side .left .menu-item {
+			transition: .3s;
+			font-size: 1rem;
+			color: rgba(0,0,0,.55);
+			margin: .25rem 0;
+		}
+		.side .left .menu-item:hover {
+			color: var(--color-prime);
+			transform: scale(1.5);
+		}
+		.side .left .line {
+			width: 1px;
+			max-height: 100px;
+			margin-top: .5rem;
+			background-color: rgba(0,0,0,.55);
+		}
+	</style>
+</head>
+<body class="has-nav-fixed-top bg-primebg text-light has-nav-fixed-top">
+	<!-- Main navbar -->
+	<nav class="navbar navbar-main navbar-expand-md navbar-dark backdrop-blur fixed-top">
+		<div class="container">
+			<a class="navbar-brand me-4" href="index.html">
+				<h3 class="title mb-0">J. Soemary</h3>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMain">
+				<ul class="navbar-nav d-md-flex w-100">
+					<li class="nav-item ms-md-auto">
+						<a class="nav-link" href="https://github.com/caksa87/template-omah/archive/refs/heads/main.zip">Download</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/caksa87/template-omah" target="_blank"><i class="icon fa fa-github"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Main navbar -->
+
+	<!-- Section hero -->
+	<div class="section hero bg-primebg text-prime py-section pt-0 pt-md-1">
+		<div class="row">
+			<div class="col-12 col-md-6 bg-img bg-cover bg-center bg-norepeat filter-shadow order-md-2" style="background-image: url('./assets/img/interior-landscape-1.jpg'); min-height: 100vh;">
+				<div class="w-100 h-100 d-flex d-md-none">
+					<div class="container mt-auto text-center bg-primebg text-prime py-3">
+						<h1 class="title display-3">Joely Soemary</h1>
+						<h6>Product designer<span class="mx-2">&bull;</span>Marketing manager</h6>
+						<a class="menu-item btn btn-outline-info rounded-pill" href="mailto:example@mail.com" title="example@mail.com">Let's talk</a>
+						<div class="contact-wrapper d-flex w-100 align-items-center justify-content-center h6">
+							<a class="menu-item text-info" href="tel:086793388880" title="086793388880"><i class="icon fa fa-phone"></i></a>
+							<a class="menu-item text-info" href="mailto:example@mail.com" title="example@mail.com"><i class="icon fa fa-envelope"></i></a>
+							<a class="menu-item text-info" href="#" title="@user.instagram"><i class="icon fa fa-instagram"></i></a>
+							<a class="menu-item text-info" href="#" title="Youtube channel"><i class="icon fa fa-youtube-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 bg-primebg order-md-1 d-none d-md-block">
+				<div class="container w-100 h-100">
+					<div class="d-flex w-100 h-100">
+						<div class="m-auto">
+							<h1 class="title display-2">Joely Soemary</h1>
+							<h5 class="text-light mt-3">
+								Based on Australy,<br>
+								I'm a <span class="fw-bold text-prime">product designer</span> and <span class="fw-bold text-prime">marketing manager</span>
+							</h5>
+							<div class="contact-wrapper d-flex w-100 mt-3 align-items-center">
+								<a class="menu-item btn btn-outline-info rounded-pill" href="mailto:example@mail.com" title="example@mail.com">Let's talk</a>
+								<a class="menu-item text-info" href="tel:086793388880" title="086793388880"><i class="icon fa fa-phone"></i></a>
+								<a class="menu-item text-info" href="mailto:example@mail.com" title="example@mail.com"><i class="icon fa fa-envelope"></i></a>
+								<a class="menu-item text-info" href="#" title="@user.instagram"><i class="icon fa fa-instagram"></i></a>
+								<a class="menu-item text-info" href="#" title="Youtube channel"><i class="icon fa fa-youtube-play"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section hero -->
+
+	<!-- Section about -->
+	<div class="section about py-section bg-norepeat">
+		<div class="container">
+			<div class="row g-5">
+				<div class="col-12 col-md-6">
+					<div class="d-flex h-100 justify-content-end">
+						<!-- Using 1:1 image is recomended -->
+						<div class="img bg-cover bg-norepeat rounded-pill filter-shadow" style="background-position: top; background-image: url('./assets/img/avatar-7.jpg'); max-width: 350px; height: fit-content;">
+							<img src="./assets/img/avatar-7.jpg" alt="Joely Soemary" class="w-100" style="visibility: hidden;">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div style="max-width: 400px;">
+						<h4 class="mb-0 fw-bold">A short story</h4>
+						<h1 class="title text-prime">About me</h1>
+						<p>Hello, I am Joely Soemary, a product designer and marketing manager. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nesciunt, animi, distinctio minima earum, voluptas nisi quaerat ad provident, quam dignissimos autem? Inventore minus, maiores harum. Magni voluptatum dignissimos sed.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section about -->
+
+	<!-- Section skill -->
+	<div class="section skill py-section bg-norepeat" style="position: relative;">
+		<div class="bg-prime rounded-circle" style="position: absolute; opacity: .2; width: 100vh; height: 100vh; right: -10%;"></div>
+		<div class="container" style="position: relative;">
+			<div class="mb-5" style="max-width: 500px;">
+				<h1 class="title text-prime">What I can do</h1>
+			</div>
+			<div class="row g-2 justify-content-center text-prime" style="cursor: default;">
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<div class="card card-body h-100 pt-4">
+						<h4 class="title">Good comunication</h4>
+						<p>In order to make clients satisfied, I always discuss my design with them. Of course it needs good comunication skill to make a deal with them</p>
+						<h1 class="mt-auto"><i class="icon fa fa-check-circle-o"></i></h1>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<div class="card card-body h-100 pt-4">
+						<h4 class="title">High quality</h4>
+						<p>I am not just following what my clients want, but also do my best and give them more than what they need. Because every project is an oportunity for me to be better</p>
+						<h1 class="mt-auto"><i class="icon fa fa-check-circle-o"></i></h1>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<div class="card card-body h-100 pt-4">
+						<h4 class="title">Smart worker</h4>
+						<p>"Let's do more" is my motto. In order to reach more, I have to do more. So that I use my time efficiently. Not just in work, but also in my daily life, so it kind of my personality</p>
+						<h1 class="mt-auto"><i class="icon fa fa-check-circle-o"></i></h1>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 text-center">
+					<div class="card card-body h-100 pt-4">
+						<h4 class="title">Good teamwork</h4>
+						<p>I am good to work in team or as a personal. All of my team mates are enjoyed to work with me and I can adapting in a new environment fastly, so I can make more friends</p>
+						<h1 class="mt-auto"><i class="icon fa fa-check-circle-o"></i></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section skill -->
+
+	<!-- Section client -->
+	<div class="section client py-section bg-norepeat text-prime">
+		<div class="container">
+			<div class="mb-5" style="max-width: 500px;">
+				<h1 class="title">Work for leading brands</h1>
+				<p>I always build good relationship with my clients and do colaborations with them to keep us growing together</p>
+			</div>
+			<div class="row g-0 justify-content-center">
+				<div class="col-12 col-lg-6 d-none d-lg-block bg-contain bg-norepeat bg-center" style="height: 500px; background-image: url('assets/img/undraw-agreement.svg');"></div>
+				<div class="col-12 col-lg-6">
+					<div class="row g-2 g-md-3 justify-content-center mx-auto" style="max-width: 750px;">
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logoLong.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logo.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logoLong.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logo.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logoLong.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logo.png');"></div>
+							</div>
+						</div>
+						<div class="col-6 col-sm-4 col-md-3 col-lg-4">
+							<div class="card card-body">
+								<div class="w-100 h-100 bg-contain bg-norepeat bg-center" style="background-image: url('assets/img/logoLong.png');"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section client -->
+
+	<!-- Section project -->
+	<div class="section project py-5 bg-norepeat">
+		<div class="container">
+			<div class="mb-5" style="max-width: 500px;">
+				<h1 class="title">What we have done</h1>
+				<p>These are our best of the best projects that make our clients happy</p>
+			</div>
+			<div id="carouselProject" class="carousel slide control-offside mx-auto mb-5 transform-perspective-right" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselProject" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselProject" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselProject" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card">
+							<div class="img w-100 h-100 bg-center bg-cover bg-norepeat" style="background-image: url('assets/img/interior-landscape-3.jpg');"></div>
+							<div class="card-body">
+								<h1 class="title">Project Title</h1>
+								<p>Project description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, amet at nostrum perferendis quia error repellendus quaerat explicabo, odio sequi!</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<div class="img w-100 h-100 bg-center bg-cover bg-norepeat" style="background-image: url('assets/img/interior-landscape-4.jpg');"></div>
+							<div class="card-body">
+								<h1 class="title">Project Title</h1>
+								<p>Project description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, amet at nostrum perferendis quia error repellendus quaerat explicabo, odio sequi!</p>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<div class="img w-100 h-100 bg-center bg-cover bg-norepeat" style="background-image: url('assets/img/interior-landscape-5.jpg');"></div>
+							<div class="card-body">
+								<h1 class="title">Project Title</h1>
+								<p>Project description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, amet at nostrum perferendis quia error repellendus quaerat explicabo, odio sequi!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselProject" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselProject" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- End Section project -->
+
+	<!-- Section testimonial -->
+	<div class="section testimonial py-5 bg-norepeat bg-norepeat" style="background-image: url('assets/img/blob-2.svg'); background-size: 70vmax; background-position: 14vw center;">
+		<div class="container">
+			<div class="mb-5" style="max-width: 500px;">
+				<h1 class="title">What they say?</h1>
+				<p>There is no doubt in our clients happiness</p>
+			</div>
+			<div class="row g-0 justify-content-center">
+				<div class="col-12 col-lg-6">
+					<div id="carouselTestimonial" class="carousel slide control-offside mx-auto mb-5 transform-perspective-right" data-bs-ride="carousel" style="max-width: 550px;">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="card card-body">
+									<div class="d-flex mb-2">
+										<div class="avatar rounded-circle" style="background-image: url('assets/img/user.jpeg');"></div>
+										<div class="ms-2">
+											<h6 class="title mb-0">Caksa Wintang</h6>
+											<p class="mb-0">Project name</p>
+										</div>
+									</div>
+									<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore earum molestias, odit exercitationem tenetur nihil similique reprehenderit libero dolorem rerum expedita quasi ducimus debitis minima dicta blanditiis soluta cum natus.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card card-body">
+									<div class="d-flex mb-2">
+										<div class="avatar rounded-circle" style="background-image: url('assets/img/avatar-8.jpg');"></div>
+										<div class="ms-2">
+											<h6 class="title mb-0">Lena Gramah</h6>
+											<p class="mb-0">Project name</p>
+										</div>
+									</div>
+									<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore earum molestias, odit exercitationem tenetur nihil similique reprehenderit libero dolorem rerum expedita quasi ducimus debitis minima dicta blanditiis soluta cum natus.</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card card-body">
+									<div class="d-flex mb-2">
+										<div class="avatar rounded-circle" style="background-image: url('assets/img/avatar-9.jpg');"></div>
+										<div class="ms-2">
+											<h6 class="title mb-0">Anor Ling</h6>
+											<p class="mb-0">Project name</p>
+										</div>
+									</div>
+									<p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore earum molestias, odit exercitationem tenetur nihil similique reprehenderit libero dolorem rerum expedita quasi ducimus debitis minima dicta blanditiis soluta cum natus.</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonial" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6 d-none d-lg-block bg-contain bg-norepeat bg-center" style="height: 500px; background-image: url('assets/img/undraw-opinion.svg');"></div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section testimonial -->
+
+	<!-- Main Footer -->
+	<div class="section footer text-white pt-3 pb-4">
+		<div class="container">
+			<img class="big-img" src="assets/img/logoLong.png">
+			<div class="row g-2">
+				<div class="col-12 col-md-4 mb-3">
+					<div class="d-flex h-100 align-items-center"><img class="mx-auto ms-md-0" src="assets/img/logoLong.png" alt="Omah" width="100"></div>
+				</div>
+				<div class="col-12 col-md-4 mb-3">
+					<table class="border-0">
+						<tr>
+							<td><p class="fw-bold title mb-0 me-2">A</p></td>
+							<td><a href="map"><p class="mb-0 text-white">23, Lorem St. City Country</p></a></td>
+						</tr>
+						<tr>
+							<td><p class="fw-bold title mb-0 me-2">P</p></td>
+							<td><a href="tel:0320"><p class="mb-0 text-white">0862-0348-4449</p></a></td>
+						</tr>
+						<tr>
+							<td><p class="fw-bold title mb-0 me-2">M</p></td>
+							<td><a href="mailto:example@mail.com"><p class="mb-0 text-white">example@mail.com</p></a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-12 col-md-4 mb-3">
+					<table class="border-0">
+						<tr>
+							<td><i class="icon fa fa-instagram me-2"></i></td>
+							<td><a href="link/instagram"><p class="mb-0 text-white">@user.instagram</p></a></td>
+						</tr>
+						<tr>
+							<td><i class="icon fa fa-youtube-play me-2"></i></td>
+							<td><a href="link/yt"><p class="mb-0 text-white">Chanel Youtube</p></a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Main Footer -->
+
+	<script src="core/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
