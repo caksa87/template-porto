@@ -31,14 +31,21 @@
 
 		.section.about {
 			background-image:
+				url('assets/img/bg-dot.png'),
 				url('assets/img/blob-1.svg'),
 				url('assets/img/blob-2.svg');
 			background-size:
+				73px,
 				contain,
 				200px;
 			background-position:
+				0 0,
 				calc(100vw - 383px) 50%,
 				calc(100vw - 383px) calc(100% - 8px);
+			background-repeat:
+				repeat,
+				no-repeat,
+				no-repeat;
 		}
 
 		.section.skill .card {
@@ -126,7 +133,7 @@
 	<!-- Section hero -->
 	<div class="section hero bg-primebg text-prime py-section pt-0 pt-md-1">
 		<div class="row">
-			<div class="col-12 col-md-6 bg-img bg-cover bg-center bg-norepeat filter-shadow order-md-2" style="background-image: url('./assets/img/interior-landscape-1.jpg'); min-height: 100vh;">
+			<div class="col-12 col-md-6 bg-img bg-cover bg-center bg-norepeat filter-shadow order-md-2" style="background-image: url('./assets/img/avatar.jpg'); min-height: 100vh;">
 				<div class="w-100 h-100 d-flex d-md-none">
 					<div class="container mt-auto text-center bg-primebg text-prime py-3">
 						<h1 class="title display-3">Joely Soemary</h1>
@@ -166,14 +173,14 @@
 	<!-- End Section hero -->
 
 	<!-- Section about -->
-	<div class="section about py-section bg-norepeat">
+	<div class="section about py-section">
 		<div class="container">
 			<div class="row g-5">
 				<div class="col-12 col-md-6">
 					<div class="d-flex h-100 justify-content-end">
 						<!-- Using 1:1 image is recomended -->
-						<div class="img bg-cover bg-norepeat rounded-pill filter-shadow" style="background-position: top; background-image: url('./assets/img/avatar-7.jpg'); max-width: 350px; height: fit-content;">
-							<img src="./assets/img/avatar-7.jpg" alt="Joely Soemary" class="w-100" style="visibility: hidden;">
+						<div class="img bg-cover bg-norepeat rounded-pill filter-shadow" style="background-position: top; background-image: url('./assets/img/avatar.jpg'); max-width: 350px; height: fit-content;">
+							<img src="./assets/img/avatar.jpg" alt="Joely Soemary" class="w-100" style="visibility: hidden;">
 						</div>
 					</div>
 				</div>
@@ -290,7 +297,7 @@
 				<h1 class="title text-prime">What I have done</h1>
 				<p class="text-light">These are my best projects I ever build as personal or team</p>
 			</div>
-			<div id="carouselProject" class="carousel slide control-offside mx-auto mb-5 transform-perspective-right" data-bs-ride="carousel">
+			<div id="carouselProject" class="carousel slide control-offside mx-auto mb-5" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselProject" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselProject" data-bs-slide-to="1" aria-label="Slide 2"></button>

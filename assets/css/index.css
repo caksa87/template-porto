@@ -127,10 +127,3 @@ a:hover, a:active, a:focus { color: #0dcaf0; }
 	.carousel.control-offside .carousel-control-next { right: -43px; }
 }
 /* End Carousel */
-
-/* Transform */
-@media(min-width: 768px) {
-	.transform-perspective-right { transform: scale(1) perspective(3000px) rotateY(11deg) rotateX(2deg) rotate(-2deg); }
-	.transform-perspective-left { transform: scale(1) perspective(3000px) rotateY(-11deg) rotateX(-2deg) rotate(2deg); }
-}
-/* End Transform */
