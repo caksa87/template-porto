@@ -92,35 +92,11 @@
 				46vmax top;
 		}
 		.section.project .carousel .carousel-inner .card .img { height: 500px !important; }
-
-		.section.testimonial .carousel .carousel-inner,
-		.section.project .carousel .carousel-inner { filter: drop-shadow(0 3rem 3rem rgba(255,0,222,.4)); }
-		.section.testimonial .avatar {
-			width: 50px;
-			height: 50px;
+		.section.project .carousel .carousel-inner .card {
+			background-color: var(--color-prime-super-dark);
+			border: 2px solid var(--color-prime);
 		}
-
-		.side .left {
-			height: calc(100vh - (59px * 2));
-			flex-direction: column;
-		}
-		.side .left .menu-wrapper { flex-direction: column; }
-		.side .left .menu-item {
-			transition: .3s;
-			font-size: 1rem;
-			color: rgba(0,0,0,.55);
-			margin: .25rem 0;
-		}
-		.side .left .menu-item:hover {
-			color: var(--color-prime);
-			transform: scale(1.5);
-		}
-		.side .left .line {
-			width: 1px;
-			max-height: 100px;
-			margin-top: .5rem;
-			background-color: rgba(0,0,0,.55);
-		}
+		.section.project .carousel .carousel-inner .card .title { color: var(--color-prime); }
 	</style>
 </head>
 <body class="has-nav-fixed-top bg-primebg text-light has-nav-fixed-top">
@@ -245,7 +221,7 @@
 				<div class="col-12 col-md-6 col-lg-3 text-center">
 					<div class="card card-body h-100 pt-4">
 						<h4 class="title">Good teamwork</h4>
-						<p>I am good to work in team or as a personal. All of my team mates are enjoyed to work with me and I can adapting in a new environment fastly, so I can make more friends</p>
+						<p>I am good to work in team or as a individual. All of my team mates are enjoyed to work with me and I can adapting in a new environment fastly, so I can make more friends</p>
 						<h1 class="mt-auto"><i class="icon fa fa-check-circle-o"></i></h1>
 					</div>
 				</div>
@@ -311,8 +287,8 @@
 	<div class="section project py-5 bg-norepeat">
 		<div class="container">
 			<div class="mb-5" style="max-width: 500px;">
-				<h1 class="title">What we have done</h1>
-				<p class="text-light">These are our best of the best projects that make our clients happy</p>
+				<h1 class="title text-prime">What I have done</h1>
+				<p class="text-light">These are my best projects I ever build as personal or team</p>
 			</div>
 			<div id="carouselProject" class="carousel slide control-offside mx-auto mb-5 transform-perspective-right" data-bs-ride="carousel">
 				<div class="carousel-indicators">
