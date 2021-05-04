@@ -29,6 +29,18 @@
 			}
 		}
 
+		.section.about {
+			background-image:
+				url('assets/img/blob-1.svg'),
+				url('assets/img/blob-2.svg');
+			background-size:
+				contain,
+				200px;
+			background-position:
+				calc(100vw - 383px) 50%,
+				calc(100vw - 383px) calc(100% - 8px);
+		}
+
 		.section.skill .card {
 			transition: .3s;
 			background-color: var(--color-prime-super-dark);
@@ -203,7 +215,7 @@
 
 	<!-- Section skill -->
 	<div class="section skill py-section bg-norepeat" style="position: relative;">
-		<div class="bg-prime rounded-circle" style="position: absolute; opacity: .2; width: 100vh; height: 100vh; right: -10%;"></div>
+		<div class="bg-light rounded-circle" style="position: absolute; opacity: .05; width: 100vh; height: 100vh; left: -3%;"></div>
 		<div class="container" style="position: relative;">
 			<div class="mb-5" style="max-width: 500px;">
 				<h1 class="title text-prime">What I can do</h1>
